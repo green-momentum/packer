@@ -34,5 +34,14 @@ After the `make` command, you will see a binary named `room`.
 
 ## TODO
 
-- [ ] use an algorithm for generating map procedurally.
-- [X] create project structure.
+- [ ] mockups
+- [ ] web export
+- [ ] dungeon/room generation (porklike)
+- [ ] turn-based movement
+- [ ] state management
+- [ ] carriage movement (cutter)
+- [ ] player stats
+- [ ] items
+- [ ] inventory or limited item slots
+- [ ] mobs
+- [X] create project structure
