@@ -1,9 +1,9 @@
-# ROOM
+# Packer
 
 A roguelike game using procedural map generation.
 
 
-## INSTALLATION
+## Installation
 
 First, install required packages using `apt`:
 
@@ -22,7 +22,7 @@ Then, run this commands to build project:
 After the `make` command, you will see a binary named `room`.
 
 
-## SOURCES
+## Sources
 
 - https://itch.io/jam/rlejam
 - http://www.roguebasin.com/index.php/Basic_BSP_Dungeon_generation
@@ -30,6 +30,11 @@ After the `make` command, you will see a binary named `room`.
 - https://gamedevelopment.tutsplus.com/tutorials/how-to-use-bsp-trees-to-generate-game-maps--gamedev-12268
 - https://github.com/raysan5/raylib/wiki/Working-on-GNU-Linux
 - https://github.com/thebracket/roguelike-celebration-2020
+
+## Mockups
+- (Map) - https://dribbble.com/shots/4168845-1-bit-mockup?utm_source=Pinterest_Shot&utm_campaign=pixelartm&utm_content=1+bit+mockup&utm_medium=Social_Share
+- (Art-style) - https://coryschmitz.tumblr.com/post/95785006897/set-of-posters-for-sirvos-award-winning-video
+- 
 
 
 ## TODO
