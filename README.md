@@ -48,6 +48,7 @@ After the `make` command, you will see a binary named `room`.
 - (Generation algorithm idea) - https://gamedev.stackexchange.com/questions/47917/procedural-house-with-rooms-generator
 - (Porklike tutorial series) - https://www.youtube.com/playlist?list=PLea8cjCua_P3LL7J1Q9b6PJua0A-96uUS
 - (Porklike tutorial pico8 bbs post) - https://www.lexaloffle.com/bbs/?tid=33121
+- (Roguelike dev resources) - https://github.com/marukrap/RoguelikeDevResources
 
 
 ## TODO
