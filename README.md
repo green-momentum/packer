@@ -34,6 +34,7 @@ After the `make` command, you will see a binary named `room`.
 - https://www.reddit.com/r/roguelikedev/comments/6df0aw/my_implementation_of_a_bunch_of_dungeon_algorithms/
 - https://www.davideaversa.it/blog/random-maps-with-cellular-automata/ **(If we choose cellular automata to generate the levels, it should be iterated at least 10 times for a well generated map.)**
 - https://gamedevelopment.tutsplus.com/tutorials/generate-random-cave-levels-using-cellular-automata--gamedev-9664
+- http://roguebasin.com/?title=Cellular_Automata_Method_for_Generating_Random_Cave-Like_Levels
 
 ## Mockups & Examples
 - (Map - [8x8 = tile size, 16 tilex16 tile = map size ?]) - https://dribbble.com/shots/4168845-1-bit-mockup?utm_source=Pinterest_Shot&utm_campaign=pixelartm&utm_content=1+bit+mockup&utm_medium=Social_Share
