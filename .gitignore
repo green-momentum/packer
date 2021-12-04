@@ -1,4 +1,5 @@
 /build/
+/emsdk/
 
 # Prerequisites
 *.d

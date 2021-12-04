@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.11)
-project(room)
+project(packer)
 
 include(FindOpenGL)
 
@@ -7,6 +7,7 @@ set(CMAKE_BUILD_TYPE "Debug")
 set(CMAKE_HAVE_LIBC_PTHREAD 1)
 
 find_package(raylib 3.0 QUIET)
+find_package(X11 QUIET)
 
 if (NOT raylib_FOUND)
   include(FetchContent)
@@ -29,8 +30,8 @@ add_executable(${PROJECT_NAME} main.c)
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)
 
-if (APPLE)
-    target_link_libraries(${PROJECT_NAME} "-framework IOKit")
-    target_link_libraries(${PROJECT_NAME} "-framework Cocoa")
-    target_link_libraries(${PROJECT_NAME} "-framework OpenGL")
+if (EMSCRIPTEN)
+  set(PLATFORM Web CACHE STRING "Forcing PLATFORM_WEB because EMSCRIPTEN was detected")
+  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -s USE_GLFW=3 -s ASSERTIONS=1 -s WASM=1 -s ASYNCIFY")
+  set(CMAKE_EXECUTABLE_SUFFIX ".html")
 endif()

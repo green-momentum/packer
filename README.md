@@ -12,11 +12,21 @@ First, install required packages using `apt`:
         libgles2-mesa-dev
 
 
+Also you need to install `emsdk` manually:
+
+    git clone https://github.com/emscripten-core/emsdk.git
+    cd emsdk
+    ./emsdk install latest
+    ./emsdk activate latest
+    source ./emsdk_env.sh
+
+
 Then, run this commands to build project:
 
-    mkdir build && cd build
-    cmake ..
+    emcmake cmake -S . -B build -DPLATFORM=Web
+    cd build
     make
+    emrun packer.html
 
 
 After the `make` command, you will see a binary named `room`.
@@ -59,7 +69,6 @@ After the `make` command, you will see a binary named `room`.
 ## TODO
 
 - [ ] mockups
-- [ ] web export
 - [ ] dungeon/room generation (porklike)
 - [ ] turn-based movement
 - [ ] state management
@@ -68,4 +77,5 @@ After the `make` command, you will see a binary named `room`.
 - [ ] items
 - [ ] inventory or limited item slots
 - [ ] mobs
+- [X] web export
 - [X] create project structure
