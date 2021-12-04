@@ -31,6 +31,7 @@ After the `make` command, you will see a binary named `room`.
 - https://github.com/raysan5/raylib/wiki/Working-on-GNU-Linux
 - https://github.com/thebracket/roguelike-celebration-2020
 - https://varav.in/archive/dungeon/
+- https://www.reddit.com/r/roguelikedev/comments/6df0aw/my_implementation_of_a_bunch_of_dungeon_algorithms/
 
 ## Mockups & Examples
 - (Map - [8x8 = tile size, 16 tilex16 tile = map size ?]) - https://dribbble.com/shots/4168845-1-bit-mockup?utm_source=Pinterest_Shot&utm_campaign=pixelartm&utm_content=1+bit+mockup&utm_medium=Social_Share
