@@ -32,7 +32,7 @@ After the `make` command, you will see a binary named `room`.
 - https://github.com/thebracket/roguelike-celebration-2020
 
 ## Mockups & Examples
-- (Map) - https://dribbble.com/shots/4168845-1-bit-mockup?utm_source=Pinterest_Shot&utm_campaign=pixelartm&utm_content=1+bit+mockup&utm_medium=Social_Share
+- (Map - [8x8 = tile size, 16 tilex16 tile = map size]) - https://dribbble.com/shots/4168845-1-bit-mockup?utm_source=Pinterest_Shot&utm_campaign=pixelartm&utm_content=1+bit+mockup&utm_medium=Social_Share
 - (Map) - https://pixeljoint.com/pixelart/110803.htm
 - (Map & Art-style) - https://tr.pinterest.com/pin/37295503154697948/
 - (Map & Art-style) - https://zapchi.itch.io/2-bit-roguelike-tileset
