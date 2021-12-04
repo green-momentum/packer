@@ -29,7 +29,8 @@ Then, run this commands to build project:
     emrun packer.html
 
 
-After the `make` command, you will see a binary named `room`.
+After the `emrun` command, it will be worked automatically on your
+browser.
 
 
 ## Sources
