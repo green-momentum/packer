@@ -46,6 +46,9 @@ browser.
 - https://www.davideaversa.it/blog/random-maps-with-cellular-automata/ **(If we choose cellular automata to generate the levels, it should be iterated at least 10 times for a well generated map.)**
 - https://gamedevelopment.tutsplus.com/tutorials/generate-random-cave-levels-using-cellular-automata--gamedev-9664
 - http://roguebasin.com/?title=Cellular_Automata_Method_for_Generating_Random_Cave-Like_Levels
+- https://medium.com/@yvanscher/cellular-automata-how-to-create-realistic-worlds-for-your-game-2a9ec35f5ba9
+- http://www.roguebasin.com/index.php/Articles
+- https://www.albertford.com/shadowcasting/
 
 ## Mockups & Examples
 - (Map - [8x8 = tile size, 16 tilex16 tile = map size ?]) - https://dribbble.com/shots/4168845-1-bit-mockup?utm_source=Pinterest_Shot&utm_campaign=pixelartm&utm_content=1+bit+mockup&utm_medium=Social_Share
