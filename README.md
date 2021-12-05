@@ -1,4 +1,4 @@
-# Packer
+# PACKER
 
 A roguelike game using procedural map generation.
 
