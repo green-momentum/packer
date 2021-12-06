@@ -26,8 +26,11 @@ if (NOT raylib_FOUND)
   endif()
 endif()
 
+set(raylib_VERBOSE 1)
+
 add_executable(${PROJECT_NAME} main.c)
-#set(raylib_VERBOSE 1)
+add_compile_options(-Werror -Wfloat-conversion -Wpedantic)
+set_property(TARGET ${PROJECT_NAME} PROPERTY C_STANDARD 99)
 target_link_libraries(${PROJECT_NAME} raylib)
 
 if (EMSCRIPTEN)

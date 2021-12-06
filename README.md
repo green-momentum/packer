@@ -26,7 +26,7 @@ Then, run this commands to build project:
     emcmake cmake -S . -B build -DPLATFORM=Web
     cd build
     make
-    emrun packer.html
+    emrun packer.html --no_browser --port=8080
 
 
 After the `emrun` command, it will be worked automatically on your
@@ -77,14 +77,37 @@ browser.
 
 ## TODO
 
-- [ ] mockups
-- [ ] dungeon/room generation (porklike)
-- [ ] turn-based movement
-- [ ] state management
-- [ ] carriage movement (cutter)
+- [ ] mockups (matrix)
+- [ ] dungeon/room generation (porklike) (matrix)
+- [ ] state management (goedev)
 - [ ] player stats
 - [ ] items
 - [ ] inventory or limited item slots
 - [ ] mobs
+- [ ] carriage movement (cutter) (goedev)
+- [ ] include audio files (goedev)
+- [ ] turn-based movement (goedev)
 - [X] web export
 - [X] create project structure
+
+
+## CHECKLIST
+
+- [X] +1 point if you use the C programming language
+  - [X] +1 point for -Werror -Wfloat-conversion -Wpedantic
+  - [X] +1 point for -std=c99
+  - [ ] +1 point for reaching 2000 lines of code in a single file.
+- [X] +1 point if you use any of the following:
+  - [X] Raylib (Highly Recommended for folks new to C)
+  - [ ] SDL2 (Recommended for people wanting to do more engine building)
+  - [ ] OpenGL (Recommended for people wanting to do even more engine building)
+  - [ ] Vulkan (Only the insane would use this for a jam... like heroseh)
+- [ ] +1 point for each of these elements from the game Rogue that you use in your game:
+  - [ ] Grid based world (the player doesn't have to be fixed to a grid)
+  - [ ] Ascii bitmap graphics, limited to 256 glyphs
+  - [ ] Turn-based gameplay
+  - [ ] Has dungeons (a series of connected rooms)
+  - [ ] Visible player/ally stats (attack, defense etc)
+- [X] +1 point for open sourcing your game
+- [ ] +1 point for streaming your development 3 times on twitch
+- [ ] +1 point for posting about your game on the Discord server or Twitter using #rlejam
