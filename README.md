@@ -26,7 +26,7 @@ Then, run this commands to build project:
     emcmake cmake -S . -B build -DPLATFORM=Web
     cd build
     make
-    emrun packer.html --no_browser --port=8080
+    emrun packer.html --no_browser --port=8080 --kill_start
 
 
 After the `emrun` command, it will be worked automatically on your
@@ -35,7 +35,8 @@ browser.
 
 ## Sources
 
-- https://itch.io/jam/rlejam
+- [RLEJam](https://itch.io/jam/rlejam)
+- [Raylib Cheatsheet](https://www.raylib.com/cheatsheet/cheatsheet.html)
 - http://www.roguebasin.com/index.php/Basic_BSP_Dungeon_generation
 - https://eskerda.com/bsp-dungeon-generation/
 - https://gamedevelopment.tutsplus.com/tutorials/how-to-use-bsp-trees-to-generate-game-maps--gamedev-12268
@@ -84,9 +85,9 @@ browser.
 - [ ] items
 - [ ] inventory or limited item slots
 - [ ] mobs
-- [ ] carriage movement (cutter) (goedev)
 - [ ] include audio files (goedev)
 - [ ] turn-based movement (goedev)
+- [ ] carriage movement (cutter) (goedev)
 - [X] web export
 - [X] create project structure
 

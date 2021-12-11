@@ -1,29 +1,49 @@
 #include "raylib.h"
 
-int main(void) {
-  const char APP_NAME[10] = "packer";
-  const int cellSize = 25;
-  const int screenWidth = cellSize * 32;
-  const int screenHeight = cellSize * 18;
+const char APP_NAME[10] = "packer";
+const int CELL_SIZE = 25;
+const int SCREEN_WIDTH = CELL_SIZE * 32;
+const int SCREEN_HEIGHT = CELL_SIZE * 18;
 
-  InitWindow(screenWidth, screenHeight, APP_NAME);
+void drawHUD() {
+  int fontSize = 20;
+  char msg[100] = "move hero with arrow keys.";
+  float width = (SCREEN_WIDTH - MeasureText(msg, fontSize)) / 2;
+  Vector2 posHUD = {width, (float)CELL_SIZE};
+  DrawText(msg, posHUD.x, posHUD.y, 20, DARKGRAY);
+}
+
+void drawHero(Vector2 pos) {
+  DrawRectangle(pos.x, pos.y, CELL_SIZE, CELL_SIZE, MAROON);
+}
+
+void drawCutter(Vector2 pos) {
+  DrawRectangle(pos.x, pos.y, CELL_SIZE, CELL_SIZE, BLUE);
+}
+
+int main(void) {
+  InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, APP_NAME);
 
   SetTargetFPS(60); // Set our game to run at 60 frames-per-second
 
-  Vector2 heroPosition = {(float)screenWidth / 2, (float)screenHeight / 2};
+  Vector2 posHero = {(float)SCREEN_WIDTH / 2, (float)SCREEN_HEIGHT / 2};
+  Vector2 posCutter = {(float)5 * CELL_SIZE, (float)5 * CELL_SIZE};
+
+  TraceLog(LOG_INFO, "posHero: {%.0f,%.0f} - posCutter: {%.0f,%.0f}\n",
+           posHero.x, posHero.y, posCutter.x, posCutter.y);
 
   // GAME LOOP
   while (!WindowShouldClose()) // Detect window close button or ESC key
   {
     // UPDATE
     if (IsKeyPressed(KEY_RIGHT)) {
-      heroPosition.x += cellSize;
+      posHero.x += CELL_SIZE;
     } else if (IsKeyPressed(KEY_LEFT)) {
-      heroPosition.x -= cellSize;
+      posHero.x -= CELL_SIZE;
     } else if (IsKeyPressed(KEY_UP)) {
-      heroPosition.y -= cellSize;
+      posHero.y -= CELL_SIZE;
     } else if (IsKeyPressed(KEY_DOWN)) {
-      heroPosition.y += cellSize;
+      posHero.y += CELL_SIZE;
     }
 
     // DRAW
@@ -31,10 +51,9 @@ int main(void) {
 
     ClearBackground(RAYWHITE);
 
-    DrawText("move the ball with arrow keys", 10, 10, 20, DARKGRAY);
-
-    // DrawCircleV(heroPosition, cellSize, MAROON);
-    DrawRectangle(heroPosition.x, heroPosition.y, cellSize, cellSize, MAROON);
+    drawHUD();
+    drawCutter(posCutter);
+    drawHero(posHero);
 
     EndDrawing();
   }
