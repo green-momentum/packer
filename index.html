@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cellular Automata Prototype</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h3>Prototyping Map Generation Using Cellular Automata</h3>
+      <div>
+        TILE_SIZE: <input type="number" id="tile_size"><br>
+        MAP_SIZE: <input type="number" id="map_size"><br>
+        ITERATION_COUNT: <input type="number" id="iteration_count"><br>
+        ENTRANCE: <select id="entrance">
+                    <option value="0">TOP</option>
+                    <option value="1">BOTTOM</option>
+                    <option value="2">LEFT</option>
+                    <option value="3">RIGHT</option>
+                  </select>
+        <br>
+        <button id="generate_btn">GENERATE</button>
+      </div>
+
+      <canvas class="canvas"></canvas>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
